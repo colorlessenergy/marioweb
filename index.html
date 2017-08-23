@@ -11,3 +11,12 @@ layout: default
     </section>
   {% endfor %}
 </article>
+<article>
+  {% for project in site.data.projects %}
+    <section>
+      <img src="{{site.baseurl}}{{project.img}}" alt="{{project.title}}">
+      <h2>{{project.title}}</h2>
+      <p><a href="{{site.baseurl}}{{project.link}}">{{project.link-text}}</a></p>
+    </section>
+  {% endfor %}
+</article>
