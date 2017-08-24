@@ -1,3 +1,7 @@
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
@@ -14,18 +18,18 @@ header {
 
 header nav {
   align-items: center;
+  background-color: rgba(7, 108, 113, 0.5);
   display: flex;
   justify-content: space-around;
+  letter-spacing: 1px;
 }
 
 header nav p {
-  font-size: 25px;
+  font-size: 20px;
   font-weight: bold;
-  letter-spacing: 3px;
 }
 
 header nav ul {
-  font-size: 20px;
   margin: 0;
   padding: 0;
 }
@@ -35,7 +39,81 @@ header nav ul li {
   margin: 0 10px;
 }
 
+header nav ul li a {
+  color: #fff;
+  transition: color 1s ease;
+}
+
+header nav ul li a:hover {
+  color: #e91e63;
+}
+
 header section {
+  align-items: center;
   flex: 1 1 auto;
   display: flex;
+}
+
+header section div {
+  margin-left: 20px;
+}
+
+header section div h1 {
+  color: #c1730a;
+  font-size: 45px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 0px;
+}
+
+header section div p:first-of-type {
+  font-size: 25px;
+  color: #b9a1a1;
+}
+
+header .link a {
+  color: #f5f5f5;
+  font-size: 22px;
+  transition: color 1s ease;
+}
+
+header .link a:hover {
+  color: #c1730a;
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  header section div {
+    margin-left: 25px;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  header {
+    background-position: center;
+  }
+
+  header section div {
+    margin-left: 50px;
+  }
+
+  header section div h1 {
+    font-size: 60px;
+  }
+
+  header nav p {
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+
+  header section div p:first-of-type {
+    font-size: 25px;
+  }
+
+  header nav ul {
+    font-size: 20px;
+  }
+
 }
