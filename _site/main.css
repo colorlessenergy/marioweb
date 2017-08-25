@@ -25,13 +25,13 @@ article .games-showcase div h2, article .games-showcase div p {
   margin: 5px 0;
 }
 
-article .games-showcase div p a, .project section div p a {
+article .games-showcase div p a, .project section div p a, .home section div p a {
   border-bottom: 1px solid #7b7b7b;
   color: #7b7b7b;
   transition: color 1s ease;
 }
 
-article .games-showcase div p a:hover, .project section div p a:hover {
+article .games-showcase div p a:hover, .project section div p a:hover, .home section div p a:hover {
   color: #e91e63;
 }
 
@@ -118,6 +118,19 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
+}
+
+.home section {
+  width: 100%;
+}
+
+.home h1 {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.home section img {
+  width: 100%;
 }
 
 .project {

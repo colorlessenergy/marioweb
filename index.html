@@ -26,12 +26,15 @@ layout: default
         </section>
       {% endfor %}
     </article>
-    <article>
+    <article class="home">
       {% for website in site.data.website %}
+      <h1>main website</h1>
         <section>
           <img class="main-img" src="{{site.baseurl}}/{{website.img}}" alt="{{website.title}}">
-          <h2>{{website.title}}</h2>
-          <p><a href="{{site.baseurl}}/{{website.link}}">{{website.link-text}}</a></p>
+          <div>
+            <h2>{{website.title}}</h2>
+            <p><a href="{{site.baseurl}}/{{website.link}}">{{website.link-text}}</a></p>
+          </div>
         </section>
       {% endfor %}
     </article>
