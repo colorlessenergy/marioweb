@@ -31,7 +31,11 @@ article .games-showcase div p a, .project section div p a, .home section div p a
   transition: color 1s ease;
 }
 
-article .games-showcase div p a:hover, .project section div p a:hover, .home section div p a:hover {
+footer section ul li a {
+  transition: color 1s ease;
+}
+
+article .games-showcase div p a:hover, .project section div p a:hover, .home section div p a:hover, footer section ul li a:hover {
   color: #e91e63;
 }
 
@@ -112,6 +116,35 @@ header .link a:hover {
 
 main {
   width: 95%;
+}
+
+footer {
+  background-color: #1d1d1d;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 200px;
+}
+
+footer section {
+  display: flex;
+  justify-content: space-around;
+}
+
+footer section ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+footer section ul li a {
+  color: #fff;
+}
+
+footer p {
+  text-align: center;
+  margin: 0;
 }
 
 .container {
