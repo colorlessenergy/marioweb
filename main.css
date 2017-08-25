@@ -12,7 +12,6 @@ article.games {
 }
 
 article .games-showcase img {
-  height: 200px;
   width: 100%;
 }
 
@@ -26,9 +25,14 @@ article .games-showcase div h2, article .games-showcase div p {
   margin: 5px 0;
 }
 
-article .games-showcase div p a {
+article .games-showcase div p a, .project section div p a {
   border-bottom: 1px solid #7b7b7b;
   color: #7b7b7b;
+  transition: color 1s ease;
+}
+
+article .games-showcase div p a:hover, .project section div p a:hover {
+  color: #e91e63;
 }
 
 header {
@@ -121,20 +125,69 @@ main {
   flex-direction: column
 }
 
+.project section {
+  align-items: center;
+  background-color: #d6d6d6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 20px 0;
+  height: 300px;
+  width: 100%;
+}
+
+.project section div {
+  align-self: flex-start;
+  margin-left: 30px;
+}
+
 .project img {
-  width: 60%;
+  width: 50%;
   height: 50%;
 }
 
 /* Tablet Styles */
-@media only screen and (min-width: 401px) and (max-width: 960px) {
+@media only screen and (min-width: 750px) {
+
+  article.games {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  article .games-showcase {
+    width: 45%;
+  }
+
+  article .games-showcase img {
+    height: 400px;
+  }
+
   header section div {
     margin-left: 25px;
+  }
+
+  .project {
+    flex-direction: unset;
+    justify-content: space-around;
+  }
+
+  .project section {
+    height: 400px;
+    width: 30%;
   }
 }
 
 /* Desktop Styles */
 @media only screen and (min-width: 961px) {
+  article.games {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  article .games-showcase {
+    width: 45%;
+  }
+
   header {
     background-position: center;
   }
@@ -159,6 +212,20 @@ main {
 
   header nav ul {
     font-size: 20px;
+  }
+
+  article .games-showcase img {
+    height: 500px;
+  }
+
+  .project {
+    flex-direction: unset;
+    justify-content: space-around;
+  }
+
+  .project section {
+    height: 400px;
+    width: 30%;
   }
 
 }
