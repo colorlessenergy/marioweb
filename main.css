@@ -1,10 +1,34 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
 a {
   text-decoration: none;
 }
 
-body {
-  font-family: 'Roboto', sans-serif;
-  margin: 0;
+article.games {
+  margin: 50px 0;
+}
+
+article .games-showcase img {
+  height: 200px;
+  width: 100%;
+}
+
+article .games-showcase div {
+  border-bottom: 1px solid #7b7b7b;
+  padding-bottom: 40px;
+  margin: 20px 0 40px 0;
+}
+
+article .games-showcase div h2, article .games-showcase div p {
+  margin: 5px 0;
+}
+
+article .games-showcase div p a {
+  border-bottom: 1px solid #7b7b7b;
+  color: #7b7b7b;
 }
 
 header {
@@ -82,8 +106,24 @@ header .link a:hover {
   color: #c1730a;
 }
 
-.main-img {
-  width: 100%;
+main {
+  width: 95%;
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.project {
+  display: flex;
+  flex-direction: column
+}
+
+.project img {
+  width: 60%;
+  height: 50%;
 }
 
 /* Tablet Styles */

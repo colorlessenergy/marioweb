@@ -2,30 +2,37 @@
 layout: default
 ---
 
-<article>
-  {% for article in  site.data.news %}
-    <section>
-      <img src="{{site.baseurl}}/{{article.img}}" alt="{{article.title}}">
-      <h2>{{article.title}}</h2>
-      <p><a href="{{site.baseurl}}/{{article.link}}">{{article.link-text}}</a></p>
-    </section>
-  {% endfor %}
-</article>
-<article>
-  {% for project in site.data.projects %}
-    <section>
-      <img src="{{site.baseurl}}/{{project.img}}" alt="{{project.title}}">
-      <h2>{{project.title}}</h2>
-      <p><a href="{{site.baseurl}}/{{project.link}}">{{project.link-text}}</a></p>
-    </section>
-  {% endfor %}
-</article>
-<article>
-  {% for website in site.data.website %}
-    <section>
-      <img class="main-img" src="{{site.baseurl}}/{{website.img}}" alt="{{website.title}}">
-      <h2>{{website.title}}</h2>
-      <p><a href="{{site.baseurl}}/{{website.link}}">{{website.link-text}}</a></p>
-    </section>
-  {% endfor %}
-</article>
+<section class="container">
+  <main>
+    <article class="games">
+      {% for article in  site.data.news %}
+        <section class="games-showcase">
+          <img src="{{site.baseurl}}/{{article.img}}" alt="{{article.title}}">
+          <div>
+            <h2>{{article.title}}</h2>
+            <p><a href="{{site.baseurl}}/{{article.link}}">{{article.link-text}}</a></p>
+          </div>
+        </section>
+      {% endfor %}
+    </article>
+    <article class="project">
+      {% for project in site.data.projects %}
+        <section>
+          <img src="{{site.baseurl}}/{{project.img}}" alt="{{project.title}}">
+          <h2>{{project.title}}</h2>
+          <p><a href="{{site.baseurl}}/{{project.link}}">{{project.link-text}}</a></p>
+        </section>
+      {% endfor %}
+    </article>
+    <article>
+      {% for website in site.data.website %}
+        <section>
+          <img class="main-img" src="{{site.baseurl}}/{{website.img}}" alt="{{website.title}}">
+          <h2>{{website.title}}</h2>
+          <p><a href="{{site.baseurl}}/{{website.link}}">{{website.link-text}}</a></p>
+        </section>
+      {% endfor %}
+    </article>
+  </main>
+
+</section>
